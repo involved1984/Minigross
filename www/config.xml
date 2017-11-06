@@ -33,6 +33,7 @@
     <plugin name="cordova-plugin-camera"              source="npm" />
     <!--plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.4.3" /-->
     <plugin name="cordova-plugin-device"              source="npm"/>
+    <gap:plugin name="cordova-plugin-camera" source="npm" />
     <plugin name="cordova-plugin-dialogs"             source="npm" />
     <plugin name="cordova-plugin-file"                source="npm" />
     <plugin name="cordova-plugin-geolocation"         source="npm"  />
@@ -40,7 +41,6 @@
     <plugin name="cordova-plugin-inappbrowser"        source="npm"  />
     <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-vibration"           source="npm"  />
-    <plugin name="cordova-plugin-android-permissions" source="npm"/>
         
 
     <!-- Define app icon and splashscreen for each platform. -->
