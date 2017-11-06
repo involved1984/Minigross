@@ -45,5 +45,11 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
+        var permissions = cordova.plugins.permissions;
+        
+        
+        permissions.requestPermission(permissions.CAMERA, function(){}, function(){});
+        
     }
 };
