@@ -41,7 +41,7 @@
     <plugin name="cordova-plugin-inappbrowser"        source="npm"  />
     <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-vibration"           source="npm"  />
-         <plugin name="cordova-android-camera-permissions"           source="npm"  />
+
         
 
         
@@ -70,6 +70,11 @@
         <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png"    density="port-xxhdpi" />
         <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
         <feature name="http://api.phonegap.com/1.0/camera"/>
+            
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+                <uses-permission android:name="android.permission.CAMERA" />
+                <uses-feature android:name="android.hardware.camera" android:required="true" />
+        </config-file>
     </platform>
 
     <!--platform name="ios">
