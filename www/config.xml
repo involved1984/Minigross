@@ -33,7 +33,7 @@
     <plugin name="cordova-plugin-camera"              source="npm" />
     <!--plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.4.3" /-->
     <plugin name="cordova-plugin-device"              source="npm"/>
-    <gap:plugin name="cordova-plugin-camera" source="npm" />
+
     <plugin name="cordova-plugin-dialogs"             source="npm" />
     <plugin name="cordova-plugin-file"                source="npm" />
     <plugin name="cordova-plugin-geolocation"         source="npm"  />
@@ -43,6 +43,11 @@
     <plugin name="cordova-plugin-vibration"           source="npm"  />
         
 
+        
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+        
+        
+        
     <!-- Define app icon and splashscreen for each platform. -->
     <platform name="android">
         <icon   src="www/res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
@@ -121,11 +126,7 @@
 
         
         
-    <config-file target="AndroidManifest.xml" parent="/*" mode="merge">
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-feature android:name="android.hardware.camera" />
-        <uses-feature android:name="android.hardware.camera.autofocus" />
-    </config-file>
+   
         
         
         
