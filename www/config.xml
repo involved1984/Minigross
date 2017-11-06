@@ -68,6 +68,7 @@
         <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png"     density="port-xhdpi" />
         <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png"    density="port-xxhdpi" />
         <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
+        <feature name="http://api.phonegap.com/1.0/camera"/>
     </platform>
 
     <!--platform name="ios">
